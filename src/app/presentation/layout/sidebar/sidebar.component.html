@@ -2,7 +2,9 @@
 <div id="sidebar" [class]="!hidden ? 'hidden' : 'mid-hidden'">
   <div class="sidebar-top">
     <img class="hide-on-sidebar-closed" [src]="topInfo.icon" />
-    <span class="overflow-ellipsis hide-on-sidebar-closed">{{ topInfo.name }}</span>
+    <span class="overflow-ellipsis hide-on-sidebar-closed sidebar-top-title">
+      {{ topInfo.name }}
+    </span>
     <div class="toggle-sidebar-hidden">
       <eda-slide-toggle [formControl]="hideSidebar"></eda-slide-toggle>
     </div>

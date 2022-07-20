@@ -29,4 +29,8 @@ export class HeaderComponent {
       }
     });
   }
+
+  public changeStyle(): void {
+    document.getElementById('body')?.classList.toggle('gcm-theme');
+  }
 }

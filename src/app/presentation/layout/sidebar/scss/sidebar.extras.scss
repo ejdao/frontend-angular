@@ -59,10 +59,6 @@ $pxToAdd: 10px;
     animation-fill-mode: forwards;
     pointer-events: none;
   }
-  .accordion-tooltip {
-    background: var(--sidebar-after-background);
-    font-weight: bolder;
-  }
   @keyframes sidenav-tooltip-keyframe {
     0% {
       opacity: 0;

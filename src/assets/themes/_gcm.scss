@@ -1,0 +1,25 @@
+.gcm-theme {
+  --eda-primary-100: #78cbd3;
+  --eda-primary-500: #0aa1ae;
+  --eda-primary-700: #087781;
+  --eda-primary-constrant-100: #8ceef7;
+  --eda-primary-constrant-500: #0ec7d8;
+  --eda-primary-constrant-700: #0faebd;
+  --eda-box-form-name-color: var(--eda-primary-500);
+  --eda-box-form-description-color: var(--eda-primary-100);
+  --sidebar-after-background: rgb(255, 255, 255, 0.95);
+  --sidebar-border-color: #d6d6d6;
+  --footer-background: var(--eda-primary-500);
+  --footer-color: var(--font-color-dark);
+  --header-background: var(--eda-primary-500);
+  --header-user-menu-hover-button: #0cbece52;
+  --sidebar-color: var(--font-color-dark);
+  --sidebar-tooltip-background: rgba(97, 97, 97, 0.9);
+  --sidebar-accordion-tooltip-background: rgba(80, 80, 80, 0.9);
+  --eda-expansion-panel-color: var(--font-color-dark);
+  --eda-expansion-panel-header-color: var(--font-color-dark);
+  --sidenav-route: var(--font-color-dark);
+  --sidebar-top-color: var(--eda-primary-500);
+  --sidebar-link-background-selected: rgba(226, 226, 226, 0.46);
+  --sidebar-link-background-hover: rgba(226, 226, 226, 0.2);
+}

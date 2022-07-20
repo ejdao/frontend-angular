@@ -29,7 +29,7 @@
       transition: background ease 0.3s;
     }
     &::after {
-      color: var(--sidebar-color);
+      color: var(--eda-expansion-panel-header-color);
       margin-right: 3px;
     }
   }
@@ -38,6 +38,7 @@
   color: var(--eda-expansion-panel-header-color);
   padding: 3px 32px 3px 3px;
   background: transparent;
+  font-weight: bolder;
   align-items: center;
   text-align: justify;
   position: relative;

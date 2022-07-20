@@ -19,12 +19,15 @@
   --sidebar-border-color: var(--constrant);
   --sidebar-after-background: rgba(34, 42, 69, 0.9);
   --sidebar-tooltip-background: rgba(59, 70, 85, 0.9);
+  --sidebar-accordion-tooltip-background: var(--sidebar-after-background);
   --sidebar-color: var(--light-color);
   --sidebar-link-background-selected: rgba(165, 165, 165, 0.36);
   --sidebar-link-background-hover: rgba(165, 165, 165, 0.113);
   --sidebar-toggle-button-over-body-background: rgba(0, 0, 0, 0.527);
+  --sidebar-top-color: var(--font-color-light);
   --sidenav-container-color: #8d8e90c5;
   --sidenav-scrollbar-thumb-hover-color: #8d8e90;
+  --sidenav-route: var(--font-color-light);
   span.sidenav.ripple {
     background-color: rgba(194, 194, 194, 0.36);
   }
@@ -56,8 +59,8 @@
   --eda-expansion-panel-container-background-color: white;
   --eda-expansion-panel-container-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  --eda-expansion-panel-color: var(--font-color-dark);
-  --eda-expansion-panel-header-color: var(--font-color-dark);
+  --eda-expansion-panel-color: var(--font-color-light);
+  --eda-expansion-panel-header-color: var(--font-color-light);
   /* SLIDE-TOGGLE */
   --eda-slide-toggle-content-color: var(--font-color-dark);
   --eda-slide-toggle-content-disabled-color: var(--font-color-disabled);

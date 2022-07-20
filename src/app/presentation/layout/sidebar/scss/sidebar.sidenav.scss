@@ -35,7 +35,6 @@
 .sidenav {
   font-size: 14px;
   &-accordion-title {
-    color: var(--sidebar-color);
     margin: 0 30px 0 9px;
   }
   &-accordion-route {
@@ -43,7 +42,7 @@
       position: relative;
       overflow: hidden;
       transition: background 400ms;
-      color: #fff;
+      color: var(--sidenav-route);
       background-color: transparent;
       cursor: pointer;
       min-height: 40px !important;
@@ -84,13 +83,13 @@
     max-width: 150px;
     overflow: hidden;
     text-overflow: ellipsis;
-    background: var(--sidebar-tooltip-background);
+    background-color: var(--sidebar-tooltip-background);
     animation: sidenav-tooltip-keyframe 0.1s ease 0.1s;
     animation-fill-mode: forwards;
     pointer-events: none;
   }
   .accordion-tooltip {
-    background: var(--sidebar-after-background);
+    background-color: var(--sidebar-accordion-tooltip-background);
     font-weight: bolder;
   }
   @keyframes sidenav-tooltip-keyframe {

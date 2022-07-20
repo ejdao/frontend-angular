@@ -31,6 +31,11 @@
     left: 0;
   }
 }
+.sidebar-top {
+  &-title {
+    color: var(--sidebar-top-color) !important;
+  }
+}
 #sidebar.mid-hidden {
   .sidebar-top {
     img.hide-on-sidebar-closed {
