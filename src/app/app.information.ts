@@ -8,8 +8,8 @@ export interface appInfoI {
 
 export const appInfo = {
   name: 'Frontend Angular',
-  version: '0.0.0',
-  released: '2022.06.12',
+  version: '0.0.1',
+  released: '2022.07.20',
   company: 'Ejdao Develoment',
   creation: '2022',
 };

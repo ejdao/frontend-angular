@@ -67,7 +67,7 @@ export class EdaDateField implements OnInit, AfterViewInit, OnDestroy, ControlVa
     this.color = validateEdaFormColor(this.color);
     this.appearance = validateEdaFormAppearance(this.appearance);
     const form: any = this.control;
-    if (form._rawValidators) {
+    if (form?._rawValidators) {
       form._rawValidators.map((r: any) => {
         if (r.name.includes('required')) {
           this.required = true;

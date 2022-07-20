@@ -76,7 +76,7 @@ export class EdaNumberField implements OnInit, OnDestroy, ControlValueAccessor {
     this.appearance = validateEdaFormAppearance(this.appearance);
     this.control?.addValidators(Validators.pattern(/^[0-9$]/));
     const form: any = this.control;
-    if (form._rawValidators) {
+    if (form?._rawValidators) {
       form._rawValidators.map((r: any) => {
         if (r.name.includes('required')) {
           this.required = true;
