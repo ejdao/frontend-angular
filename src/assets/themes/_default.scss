@@ -9,8 +9,8 @@
   --font-color-disabled: #a4a4a4;
   --background-color-disabled: #dcdcdc;
   --container-background: #fafafa;
-  --header-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.055),
-    0px 6px 10px 0px rgba(0, 0, 0, 0.055), 0px 1px 18px 0px rgba(0, 0, 0, 0.062);
+  --header-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.055), 0px 6px 10px 0px rgba(0, 0, 0, 0.055),
+    0px 1px 18px 0px rgba(0, 0, 0, 0.062);
   --header-background: var(--principal);
   --header-color: var(--dark-color);
   --footer-background: var(--constrant);
@@ -29,7 +29,7 @@
   }
 }
 :root {
-  /* EDA COLORS */
+  /* EDA */
   --eda-primary-100: rgb(0, 0, 0);
   --eda-primary-500: rgb(34, 42, 69);
   --eda-primary-700: rgb(20, 25, 41);
@@ -72,4 +72,24 @@
   --eda-raised-button-disabled-background-color: var(--background-color-disabled);
   --eda-raised-button-disabled-color: var(--font-color-disabled);
   --eda-transparent-button-disabled-color: var(--font-color-disabled);
+}
+:root {
+  /* MATERIAL */
+  --mat-primary-100: var(--eda-primary-100);
+  --mat-primary-500: var(--eda-primary-500);
+  --mat-primary-700: var(--eda-primary-700);
+  --mat-accent-100: var(--eda-accent-100);
+  --mat-accent-500: var(--eda-accent-500);
+  --mat-accent-700: var(--eda-accent-700);
+  --mat-warn-100: var(--eda-warn-100);
+  --mat-warn-500: var(--eda-warn-500);
+  --mat-warn-700: var(--eda-warn-700);
+  /* COMPONENTS */
+  --mat-snackbar-notification-action-color: var(--mat-accent-500);
+  --mat-snackbar-notification-background: #323232;
+  --mat-snackbar-notification-color: white;
+  --mat-select-panel-color: rgba(202, 202, 202);
+  --mat-autofill-fill-box-shadow: #f0f0f0;
+  --mat-autofill-all-box-shadow: white;
+  --mat-form-field-border-color-hover: rgba(202, 202, 202, 0.466);
 }

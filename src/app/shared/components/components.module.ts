@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { EdaSlideToggleModule } from './slide-toggle/slide-toggle.module';
 import { EdaExpansionModule } from './expansion/expansion.module';
 import { EdaDividerModule } from './divider/divider.module';
@@ -11,9 +11,8 @@ import { EdaIconModule } from './icon/icon.module';
 @NgModule({
   declarations: [],
   imports: [
-    ReactiveFormsModule,
     CommonModule,
-    FormsModule,
+    ReactiveFormsModule,
     EdaSlideToggleModule,
     EdaExpansionModule,
     EdaDividerModule,
@@ -22,8 +21,6 @@ import { EdaIconModule } from './icon/icon.module';
     EdaIconModule,
   ],
   exports: [
-    ReactiveFormsModule,
-    FormsModule,
     EdaSlideToggleModule,
     EdaExpansionModule,
     EdaDividerModule,

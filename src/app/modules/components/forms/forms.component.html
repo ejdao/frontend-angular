@@ -1,0 +1,14 @@
+<form [formGroup]="myForm" style="max-width: 300px" (ngSubmit)="onSubmit()">
+  <eda-money-field
+    formControlName="text"
+    label="text"
+    placeholder="insert text"
+    appearance="standard">
+  </eda-money-field>
+  <br />
+  <br />
+  <button edaRaisedButton color="primary" type="submit">SUBMIT</button>
+  <br />
+  <br />
+  <button edaRaisedButton color="accent" type="reset">RESET</button>
+</form>

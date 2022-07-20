@@ -1,4 +1,12 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-layout',
@@ -6,12 +14,15 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@
   styleUrls: ['./layout.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class LayoutComponent implements OnInit {
+export class LayoutComponent implements OnInit, AfterViewInit, OnDestroy {
   public opened: boolean = false;
+
   public hidden: boolean = true;
-  constructor(private _cd: ChangeDetectorRef) {}
+
+  constructor(private _cd: ChangeDetectorRef, private _title: Title) {}
 
   public ngOnInit(): void {
+    this._title.setTitle('FrontendAngular | Dashboard');
     if (localStorage.getItem('hideSidebar') !== null) {
       if (localStorage.getItem('hideSidebar') === 'true') {
         this.hidden = true;
@@ -20,8 +31,17 @@ export class LayoutComponent implements OnInit {
       }
     }
   }
+
+  public ngAfterViewInit(): void {
+    document.getElementById('body')?.classList.add('layout');
+  }
+
   public onHideSidebar(event: boolean): void {
     this.hidden = event;
     this._cd.markForCheck();
+  }
+
+  public ngOnDestroy(): void {
+    document.getElementById('body')?.classList.remove('layout');
   }
 }

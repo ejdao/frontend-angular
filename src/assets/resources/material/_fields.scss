@@ -1,0 +1,78 @@
+.mat-form-field {
+  width: 100%;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: var(--mat-form-field-border-color-hover) !important;
+}
+.mat-form-field-appearance-fill.mat-form-field-disabled .mat-form-field-underline::before,
+.mat-form-field .mat-form-field-ripple {
+  background-color: var(--mat-form-field-border-color-hover) !important;
+}
+.mat-form-field-appearance-standard {
+  margin-top: -15px;
+}
+#body.layout {
+  --mat-autofill-all-box-shadow: #fafafa;
+  .mat-form-field-appearance-outline {
+    margin-bottom: -5px;
+  }
+}
+.mat-form-field-appearance-fill input:-webkit-autofill,
+.mat-form-field-appearance-fill input:-webkit-autofill:hover,
+.mat-form-field-appearance-fill input:-webkit-autofill:focus,
+.mat-form-field-appearance-fill input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px var(--mat-autofill-fill-box-shadow) inset !important;
+  -webkit-box-shadow: 0 0 0 30px var(--mat-autofill-fill-box-shadow) inset !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px var(--mat-autofill-all-box-shadow) inset !important;
+  -webkit-box-shadow: 0 0 0 30px var(--mat-autofill-all-box-shadow) inset !important;
+}
+.mat-select-panel {
+  color: transparent;
+  overflow-y: overlay !important;
+  &::-webkit-scrollbar {
+    width: 0.3em;
+  }
+  &::-webkit-scrollbar-thumb {
+    border: 1px solid transparent;
+    background-clip: padding-box;
+    box-shadow: inset 0 0 0 5px;
+    border-radius: 10px;
+  }
+  &:hover {
+    color: var(--mat-select-panel-color) !important;
+  }
+}
+.icon-decryted-password-button {
+  color: var(--material-icon-color);
+  width: 32px;
+}
+.search-field {
+  font-family: 'bodycommerce';
+  max-width: 210px;
+  background: #ffffff;
+  height: 56px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mat-custom-error {
+  margin-top: -30px;
+  font-size: 12px;
+  height: 14px;
+  color: transparent;
+  float: left;
+  max-width: 100%;
+  line-height: 12px;
+  &.show {
+    margin-top: -17px;
+    color: var(--mat-warn-500);
+    transition: ease 0.3s;
+  }
+  & div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+}

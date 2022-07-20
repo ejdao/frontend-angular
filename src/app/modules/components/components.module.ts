@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { ComponentsRoutingModule } from './components-routing.module';
 import { ButtonsComponent } from './buttons/buttons.component';
-import { EdaComponentsModule } from 'src/app/shared/components/components.module';
+import { FormsComponent } from './forms/forms.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
-  declarations: [ButtonsComponent],
-  imports: [EdaComponentsModule, CommonModule, ComponentsRoutingModule],
+  declarations: [ButtonsComponent, FormsComponent],
+  imports: [SharedModule, ComponentsRoutingModule],
 })
 export class ComponentsModule {}
