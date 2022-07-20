@@ -1,0 +1,29 @@
+.eda-icon-button {
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  &:disabled,
+  &:hover:disabled {
+    color: var(--eda-transparent-button-disabled-color);
+    background-color: transparent;
+  }
+  &-primary {
+    color: var(--eda-primary-500);
+    & .eda-button-span.eda-ripple {
+      background-color: var(--eda-primary-constrant-100);
+    }
+  }
+  &-accent {
+    color: var(--eda-accent-500);
+    & .eda-button-span.eda-ripple {
+      background-color: var(--eda-accent-constrant-100);
+    }
+  }
+  &-warn {
+    color: var(--eda-warn-500);
+    & .eda-button-span.eda-ripple {
+      background-color: var(--eda-warn-constrant-100);
+    }
+  }
+}

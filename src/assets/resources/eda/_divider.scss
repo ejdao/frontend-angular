@@ -1,0 +1,11 @@
+.eda-divider {
+  border-top-color: var(--eda-divider-border-top-color-default);
+  border-top-style: solid;
+  border-top-width: 1px;
+  display: block;
+  padding: 5px;
+  margin: 0;
+}
+.eda-divider-light {
+  border-top-color: var(--eda-divider-border-top-color-constrant) !important;
+}

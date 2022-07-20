@@ -1,0 +1,24 @@
+@import '../layout.constants.scss';
+.footer {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background: var(--footer-background);
+  height: var(--footer-height);
+  color: var(--footer-color);
+  font-weight: bolder;
+  z-index: 997;
+  width: 100%;
+  &-left {
+    padding-left: 10px;
+  }
+  &-right {
+    padding: 0 10px 0 10px;
+    display: none;
+  }
+}
+@media (min-width: $LG_RESOLUTION) {
+  .footer-right {
+    display: block;
+  }
+}

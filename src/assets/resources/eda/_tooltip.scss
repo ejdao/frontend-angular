@@ -1,0 +1,21 @@
+.eda-tooltip {
+  background-color: var(--eda-tooltip-background-color);
+  color: var(--eda-tooltip-color);
+  box-sizing: border-box;
+  line-height: initial;
+  white-space: nowrap;
+  text-align: justify;
+  position: absolute;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 12px;
+  z-index: 999;
+  width: auto;
+  opacity: 0;
+  animation: eda-fadein 0.15s ease 0.15s;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+.eda-tooltip.eda-tooltip-preline {
+  white-space: pre-line;
+}

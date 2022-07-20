@@ -1,0 +1,17 @@
+<div [class]="'eda-slide-toggle-container ' + 'eda-slide-toggle-container-' + color">
+  <label class="eda-slide-toggle">
+    <input
+      [checked]="control.value === true"
+      type="checkbox"
+      (change)="onChange()"
+      [disabled]="disabled"
+      #input />
+    <span class="eda-slide-toggle-slider"></span>
+  </label>
+  <span
+    class="eda-slide-toggle-content"
+    [class.eda-slide-toggle-content-disabled]="disabled"
+    (click)="clickOnToggleContent()">
+    <ng-content></ng-content>
+  </span>
+</div>

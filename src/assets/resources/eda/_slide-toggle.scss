@@ -1,0 +1,135 @@
+.eda-slide-toggle-container {
+  padding: 3px 0 3px 1px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.eda-slide-toggle {
+  display: inline-block;
+  position: relative;
+  height: 14px;
+  width: 36px;
+}
+.eda-slide-toggle-content {
+  color: var(--eda-slide-toggle-content-color);
+  padding-left: 5px;
+  cursor: pointer;
+  &-disabled {
+    color: var(--eda-slide-toggle-content-disabled-color);
+    cursor: default;
+  }
+}
+.eda-slide-toggle input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  &:disabled ~ span {
+    background-color: var(--eda-slide-toggle-disabled-background-color);
+    cursor: default;
+  }
+}
+.eda-slide-toggle-slider {
+  background-color: var(--eda-slide-toggle-background-color);
+  -webkit-transition: 0.2s;
+  border-radius: 34px;
+  position: absolute;
+  transition: 0.2s;
+  cursor: pointer;
+  height: 14px;
+  bottom: 0;
+  top: 2px;
+  right: 0;
+  left: 0;
+}
+.eda-slide-toggle-slider:before {
+  background-color: var(--eda-slide-toggle-buttom-background-color);
+  box-shadow: var(--eda-slide-toggle-buttom-box-shadow);
+  -webkit-transition: 0.2s;
+  position: absolute;
+  border-radius: 50%;
+  transition: 0.2s;
+  height: 20px;
+  width: 20px;
+  content: '';
+  top: -3px;
+}
+.eda-slide-toggle > input:checked + .eda-slide-toggle-slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+/* PRIMARY */
+.eda-slide-toggle-container-primary
+  .eda-slide-toggle
+  > input:checked
+  + .eda-slide-toggle-slider {
+  background-color: var(--eda-primary-constrant-500);
+}
+.eda-slide-toggle-container-primary
+  .eda-slide-toggle
+  > input:checked
+  + .eda-slide-toggle-slider:before {
+  background: var(--eda-primary-500);
+}
+.eda-slide-toggle-container-primary
+  .eda-slide-toggle
+  > input:disabled:checked
+  + .eda-slide-toggle-slider {
+  background-color: var(--eda-primary-constrant-100);
+}
+.eda-slide-toggle-container-primary
+  .eda-slide-toggle
+  > input:disabled:checked
+  + .eda-slide-toggle-slider:before {
+  background: var(--eda-primary-constrant-500);
+}
+/* ACCENT */
+.eda-slide-toggle-container-accent
+  .eda-slide-toggle
+  > input:checked
+  + .eda-slide-toggle-slider {
+  background-color: var(--eda-accent-constrant-500);
+}
+.eda-slide-toggle-container-accent
+  .eda-slide-toggle
+  > input:checked
+  + .eda-slide-toggle-slider:before {
+  background: var(--eda-accent-500);
+}
+.eda-slide-toggle-container-accent
+  .eda-slide-toggle
+  > input:disabled:checked
+  + .eda-slide-toggle-slider {
+  background-color: var(--eda-accent-constrant-100);
+}
+.eda-slide-toggle-container-accent
+  .eda-slide-toggle
+  > input:disabled:checked
+  + .eda-slide-toggle-slider:before {
+  background: var(--eda-accent-constrant-500);
+}
+/* WARN */
+.eda-slide-toggle-container-warn
+  .eda-slide-toggle
+  > input:checked
+  + .eda-slide-toggle-slider {
+  background-color: var(--eda-warn-constrant-500);
+}
+.eda-slide-toggle-container-warn
+  .eda-slide-toggle
+  > input:checked
+  + .eda-slide-toggle-slider:before {
+  background: var(--eda-warn-500);
+}
+.eda-slide-toggle-container-warn
+  .eda-slide-toggle
+  > input:disabled:checked
+  + .eda-slide-toggle-slider {
+  background-color: var(--eda-warn-constrant-100);
+}
+.eda-slide-toggle-container-warn
+  .eda-slide-toggle
+  > input:disabled:checked
+  + .eda-slide-toggle-slider:before {
+  background: var(--eda-warn-constrant-500);
+}

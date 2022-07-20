@@ -1,0 +1,16 @@
+.header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background: var(--header-background);
+  box-shadow: var(--header-box-shadow);
+  height: var(--header-height);
+  color: var(--header-color);
+  font-weight: bolder;
+  position: sticky;
+  z-index: 997;
+  width: 100%;
+  &-left {
+    padding-left: 10px;
+  }
+}

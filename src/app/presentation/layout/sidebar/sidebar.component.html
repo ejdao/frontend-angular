@@ -1,0 +1,60 @@
+<!-- SIDEBAR -->
+<div id="sidebar" [class]="!hidden ? 'hidden' : 'mid-hidden'">
+  <div class="sidebar-top">
+    <img class="hide-on-sidebar-closed" [src]="topInfo.icon" />
+    <span class="overflow-ellipsis hide-on-sidebar-closed">{{ topInfo.name }}</span>
+    <div class="toggle-sidebar-hidden">
+      <eda-slide-toggle [formControl]="hideSidebar"></eda-slide-toggle>
+    </div>
+  </div>
+  <eda-divider color="light" style="padding: 0"></eda-divider>
+  <!-- SIDENAV -->
+  <div id="sidenav" class="sidenav-container">
+    <eda-accordion>
+      <div class="sidenav" *ngFor="let nav of sideNav">
+        <!-- links -->
+        <a
+          *ngIf="nav.type === 'link'"
+          class="sidenav-accordion-route"
+          [routerLink]="nav.route"
+          routerLinkActive="active">
+          <button
+            [edaTooltip]="sidebarHidden && hidden ? nav.title : ''"
+            edaTooltipClass="sidenav-tooltip"
+            edaTooltipPosition="right">
+            <img [src]="nav.icon" />
+            <span class="overflow-ellipsis">
+              {{ nav.title }}
+            </span>
+          </button>
+        </a>
+        <!-- accordions -->
+        <eda-expansion-panel *ngIf="nav.type === 'accordion'">
+          <eda-expansion-panel-header
+            [edaTooltip]="sidebarHidden && hidden ? nav.title : ''"
+            edaTooltipClass="sidenav-tooltip accordion-tooltip"
+            edaTooltipPosition="right">
+            <span class="sidenav-accordion-title overflow-ellipsis">
+              {{ nav.title }}
+            </span>
+          </eda-expansion-panel-header>
+          <div *ngFor="let route of nav.routes">
+            <a class="sidenav-accordion-route" [routerLink]="route.route" routerLinkActive="active">
+              <button
+                [edaTooltip]="sidebarHidden && hidden ? route.title : ''"
+                edaTooltipClass="sidenav-tooltip"
+                edaTooltipPosition="right">
+                <img [src]="route.icon" />
+                <span class="overflow-ellipsis">
+                  {{ route.title }}
+                </span>
+              </button>
+            </a>
+          </div>
+        </eda-expansion-panel>
+      </div>
+    </eda-accordion>
+  </div>
+</div>
+<!-- ONLY IN MOBILE RESOLUTIONS -->
+<button id="toggle-button-over-body" (click)="toggleSidebar()"></button>

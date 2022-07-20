@@ -1,0 +1,47 @@
+@import 'layout.constants.scss';
+::ng-deep {
+  :root {
+    --header-height: 64px;
+    --footer-height: 50px;
+    --sidebar-width: 238px;
+    --sidebar-mid-width: 45px;
+    --sidebar-hidden-position: -240px;
+    --container-padding: 20px;
+  }
+}
+#wrapper {
+  transition: all ease 0.3s;
+  &.hidden.active {
+    margin-left: var(--sidebar-width);
+    transition: all ease 0.3s;
+  }
+  &.mid-hidden {
+    margin-left: var(--sidebar-mid-width);
+  }
+  &.mid-hidden.active {
+    margin-left: var(--sidebar-width);
+    transition: all ease 0.3s;
+  }
+}
+@media (max-width: $MD_RESOLUTION) {
+  #wrapper {
+    &.hidden.active,
+    &.mid-hidden,
+    &.mid-hidden.active {
+      margin-left: 0;
+    }
+  }
+}
+#container {
+  height: calc(100vh - (var(--header-height)));
+  background: var(--container-background);
+  overflow-y: auto;
+  overflow-x: hidden;
+  & .content {
+    min-height: calc(
+      100vh - (var(--header-height) + var(--footer-height)) - (var(--container-padding) * 2)
+    );
+    padding: var(--container-padding);
+    z-index: 997;
+  }
+}

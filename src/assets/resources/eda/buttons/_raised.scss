@@ -1,0 +1,38 @@
+.eda-raised-button {
+  color: #000000;
+  background: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px 3px 5px 3px;
+  border-radius: 3px;
+  &:disabled {
+    background: var(--eda-raised-button-disabled-background-color);
+    color: var(--eda-raised-button-disabled-color);
+  }
+  &-primary {
+    background-color: var(--eda-primary-500);
+
+    & .eda-button-span.eda-ripple {
+      background-color: var(--eda-primary-constrant-100);
+    }
+  }
+  &-accent {
+    background-color: var(--eda-accent-500);
+
+    & .eda-button-span.eda-ripple {
+      background-color: var(--eda-accent-constrant-100);
+    }
+  }
+  &-warn {
+    background-color: var(--eda-warn-500);
+
+    & .eda-button-span.eda-ripple {
+      background-color: var(--eda-warn-constrant-100);
+    }
+  }
+}
+.eda-raised-button-primary,
+.eda-raised-button-accent,
+.eda-raised-button-warn {
+  color: #ffffff;
+}

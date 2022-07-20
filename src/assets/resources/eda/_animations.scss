@@ -1,0 +1,14 @@
+@keyframes eda-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes eda-ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}

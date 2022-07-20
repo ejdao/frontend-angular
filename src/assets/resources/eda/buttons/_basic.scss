@@ -1,0 +1,40 @@
+.eda-button {
+  background: transparent;
+  padding: 5px 3px 5px 3px;
+  border-radius: 3px;
+  &:hover {
+    background-color: rgba(185, 185, 185, 0.36);
+  }
+  &:disabled,
+  &:hover:disabled {
+    color: var(--eda-transparent-button-disabled-color);
+    background-color: transparent;
+  }
+  &-primary {
+    color: var(--eda-primary-500);
+    &:hover {
+      background-color: var(--eda-primary-constrant-100);
+    }
+    & .eda-button-span.eda-ripple {
+      background-color: var(--eda-primary-constrant-500);
+    }
+  }
+  &-accent {
+    color: var(--eda-accent-500);
+    &:hover {
+      background-color: var(--eda-accent-constrant-100);
+    }
+    & .eda-button-span.eda-ripple {
+      background-color: var(--eda-accent-constrant-500);
+    }
+  }
+  &-warn {
+    color: var(--eda-warn-500);
+    &:hover {
+      background-color: var(--eda-warn-constrant-100);
+    }
+    & .eda-button-span.eda-ripple {
+      background-color: var(--eda-warn-constrant-500);
+    }
+  }
+}

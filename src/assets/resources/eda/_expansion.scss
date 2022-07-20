@@ -1,0 +1,58 @@
+.eda-expansion-panel-container {
+  background-color: var(--eda-expansion-panel-container-background-color);
+  box-shadow: var(--eda-expansion-panel-container-box-shadow);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.eda-expansion-panel {
+  &-body {
+    color: var(--eda-expansion-panel-color);
+    transition: max-height 0.2s ease-out;
+    background: transparent;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+  }
+  &-container {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  &-header {
+    min-height: 40px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 5px 0 1px;
+    &:hover {
+      background: var(--sidebar-link-background-hover) !important;
+      transition: background ease 0.3s;
+    }
+    &::after {
+      color: var(--sidebar-color);
+      margin-right: 3px;
+    }
+  }
+}
+.eda-expansion-panel-header {
+  color: var(--eda-expansion-panel-header-color);
+  padding: 3px 32px 3px 3px;
+  background: transparent;
+  align-items: center;
+  text-align: justify;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  &::after {
+    transition: transform 0.3s ease;
+    font-size: 24px !important;
+    position: absolute;
+    content: '\203A';
+    right: 1rem;
+  }
+  &.active::after {
+    transition: transform 0.3s ease;
+    transform: rotate(90deg);
+  }
+}

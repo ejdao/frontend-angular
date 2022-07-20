@@ -1,0 +1,75 @@
+/* LAYOUT */
+:root {
+  --principal: #ffffff;
+  --constrant: #222a45;
+  --light-color: #ffffff;
+  --dark-color: #000000;
+  --font-color-dark: black;
+  --font-color-light: white;
+  --font-color-disabled: #a4a4a4;
+  --background-color-disabled: #dcdcdc;
+  --container-background: #fafafa;
+  --header-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.055),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.055), 0px 1px 18px 0px rgba(0, 0, 0, 0.062);
+  --header-background: var(--principal);
+  --header-color: var(--dark-color);
+  --footer-background: var(--constrant);
+  --footer-color: var(--light-color);
+  --sidebar-border-color: var(--constrant);
+  --sidebar-after-background: rgba(34, 42, 69, 0.9);
+  --sidebar-tooltip-background: rgba(59, 70, 85, 0.9);
+  --sidebar-color: var(--light-color);
+  --sidebar-link-background-selected: rgba(165, 165, 165, 0.36);
+  --sidebar-link-background-hover: rgba(165, 165, 165, 0.113);
+  --sidebar-toggle-button-over-body-background: rgba(0, 0, 0, 0.527);
+  --sidenav-container-color: #8d8e90c5;
+  --sidenav-scrollbar-thumb-hover-color: #8d8e90;
+  span.sidenav.ripple {
+    background-color: rgba(194, 194, 194, 0.36);
+  }
+}
+:root {
+  /* EDA COLORS */
+  --eda-primary-100: rgb(0, 0, 0);
+  --eda-primary-500: rgb(34, 42, 69);
+  --eda-primary-700: rgb(20, 25, 41);
+  --eda-accent-100: rgb(30, 233, 148);
+  --eda-accent-500: rgb(24, 182, 116);
+  --eda-accent-700: rgb(29, 139, 110);
+  --eda-warn-100: rgb(255, 55, 55);
+  --eda-warn-500: rgb(255, 0, 0);
+  --eda-warn-700: rgb(168, 0, 0);
+  --eda-primary-constrant-100: rgb(200, 202, 209);
+  --eda-primary-constrant-500: rgb(145, 149, 163);
+  --eda-primary-constrant-700: rgb(108, 111, 122);
+  --eda-accent-constrant-100: rgb(177, 243, 214);
+  --eda-accent-constrant-500: rgb(70, 221, 158);
+  --eda-accent-constrant-700: rgb(65, 185, 135);
+  --eda-warn-constrant-100: rgb(254, 191, 191);
+  --eda-warn-constrant-500: rgb(255, 128, 128);
+  --eda-warn-constrant-700: rgb(191, 96, 96);
+  /* DIVIDER */
+  --eda-divider-border-top-color-default: rgba(0, 0, 0, 0.12);
+  --eda-divider-border-top-color-constrant: rgba(214, 214, 214, 0.12);
+  /* EXPANSION */
+  --eda-expansion-panel-container-background-color: white;
+  --eda-expansion-panel-container-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  --eda-expansion-panel-color: var(--font-color-dark);
+  --eda-expansion-panel-header-color: var(--font-color-dark);
+  /* SLIDE-TOGGLE */
+  --eda-slide-toggle-content-color: var(--font-color-dark);
+  --eda-slide-toggle-content-disabled-color: var(--font-color-disabled);
+  --eda-slide-toggle-disabled-background-color: var(--background-color-disabled);
+  --eda-slide-toggle-background-color: #cecece;
+  --eda-slide-toggle-buttom-background-color: #fafafa;
+  --eda-slide-toggle-buttom-box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024,
+    0 1px 3px #0000001f;
+  /* TOOLTIP */
+  --eda-tooltip-color: var(--font-color-light);
+  --eda-tooltip-background-color: rgba(81, 81, 81, 0.9);
+  /* BUTTON */
+  --eda-raised-button-disabled-background-color: var(--background-color-disabled);
+  --eda-raised-button-disabled-color: var(--font-color-disabled);
+  --eda-transparent-button-disabled-color: var(--font-color-disabled);
+}

@@ -1,0 +1,14 @@
+<app-sidebar
+  [opened]="opened"
+  [hidden]="hidden"
+  (hideSidebarEvent)="onHideSidebar($event)"
+></app-sidebar>
+<div id="wrapper" [class]="!hidden ? 'hidden' : 'mid-hidden'">
+  <app-header></app-header>
+  <div id="container">
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+  </div>
+</div>
