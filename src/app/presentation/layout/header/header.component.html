@@ -5,4 +5,21 @@
       <eda-icon>menu</eda-icon>
     </button>
   </div>
+  <!-- CONTENT TO RIGHT -->
+  <div class="header-right">
+    <span class="header-user-menu">
+      <button [matMenuTriggerFor]="menu">
+        <span class="d-none d-sm-block">
+          {{ userName }}
+        </span>
+        <eda-icon class="header-user-menu-icon">account_circle</eda-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <a mat-menu-item class="header-user-menu-a" (click)="onLogout()">
+          <eda-icon class="header-user-menu-a-icon">logout</eda-icon>
+          <span>Logout</span>
+        </a>
+      </mat-menu>
+    </span>
+  </div>
 </div>

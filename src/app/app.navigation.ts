@@ -28,6 +28,11 @@ export const SIDENAV = [
         icon: `${ICONS_URL}/icon-one.png`,
         route: `${KEYWORD_LAYOUT}/components/forms`,
       },
+      {
+        title: 'Cards and Boxes',
+        icon: `${ICONS_URL}/icon-three.png`,
+        route: `${KEYWORD_LAYOUT}/components/cards-and-boxes`,
+      },
     ],
   },
 ];

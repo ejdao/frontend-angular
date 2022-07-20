@@ -9,6 +9,7 @@
   --font-color-disabled: #a4a4a4;
   --background-color-disabled: #dcdcdc;
   --container-background: #fafafa;
+  --header-user-menu-hover-button: #f5f5f5;
   --header-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.055), 0px 6px 10px 0px rgba(0, 0, 0, 0.055),
     0px 1px 18px 0px rgba(0, 0, 0, 0.062);
   --header-background: var(--principal);
@@ -72,6 +73,11 @@
   --eda-raised-button-disabled-background-color: var(--background-color-disabled);
   --eda-raised-button-disabled-color: var(--font-color-disabled);
   --eda-transparent-button-disabled-color: var(--font-color-disabled);
+  /* BOX */
+  --eda-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  --eda-box-background: var(--light-color);
+  --eda-box-form-name-color: var(--eda-primary-500);
+  --eda-box-form-description-color: var(--eda-primary-100);
 }
 :root {
   /* MATERIAL */

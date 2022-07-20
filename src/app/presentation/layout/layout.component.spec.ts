@@ -1,4 +1,7 @@
 import { TestBed } from '@angular/core/testing';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { AppRoutingModule } from '../../app-routing.module';
 import { EdaComponentsModule } from '../../shared/components/components.module';
 import { FooterComponent } from './footer/footer.component';
@@ -10,7 +13,13 @@ describe('LayoutComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [LayoutComponent, FooterComponent, HeaderComponent, SidebarComponent],
-      imports: [AppRoutingModule, EdaComponentsModule],
+      imports: [
+        AppRoutingModule,
+        EdaComponentsModule,
+        MatDialogModule,
+        MatSnackBarModule,
+        MatMenuModule,
+      ],
     }).compileComponents();
   });
 

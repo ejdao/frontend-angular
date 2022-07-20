@@ -1,0 +1,11 @@
+<div class="row">
+  <div [class]="gridsOnSide"></div>
+  <div [class]="gridPrincipal">
+    <eda-box-container>
+      <div style="padding: 10px">
+        <ng-content></ng-content>
+      </div>
+    </eda-box-container>
+  </div>
+  <div [class]="gridsOnSide"></div>
+</div>

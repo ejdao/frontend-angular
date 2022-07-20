@@ -1,0 +1,8 @@
+<input cdkFocusInitial type="text" style="display: none" />
+<h1 *ngIf="data.title !== ''" style="font-size: 20px">{{ data.title }}</h1>
+<p style="font-size: 18px">{{ data.content }}</p>
+<div class="buttons">
+  <button edaButton *ngIf="data.tp === 'confirm'" color="accent" (click)="onConfirm()">YES</button>
+  <button edaButton *ngIf="data.tp === 'confirm'" color="warn" (click)="onCancel()">NO</button>
+  <button edaButton *ngIf="data.tp === 'alert'" color="accent" (click)="onClose()">OK</button>
+</div>

@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div [class]="gridsOnSide"></div>
+    <div [class]="gridPrincipal">
+      <eda-box-container>
+        <div class="eda-box-form-top">
+          <span class="eda-box-form-name" *ngIf="name">{{ name }}</span>
+          <span class="eda-box-form-description" *ngIf="name && description">
+            {{ description }}
+          </span>
+        </div>
+        <eda-divider *ngIf="name || description"></eda-divider>
+        <div>
+          <form [formGroup]="formGroup">
+            <div class="eda-box-form-content">
+              <ng-content></ng-content>
+            </div>
+            <div style="min-height: 5px">
+              <eda-divider style="padding: 0"></eda-divider>
+              <mat-progress-bar *ngIf="loading" mode="indeterminate"> </mat-progress-bar>
+            </div>
+            <div class="eda-box-form-buttons">
+              <button
+                edaButton
+                type="submit"
+                color="accent"
+                [disabled]="formGroup.invalid || loading">
+                {{ button }}
+              </button>
+              <button
+                *ngIf="hasResetButton"
+                edaButton
+                type="reset"
+                color="warn"
+                [disabled]="loading">
+                RESET
+              </button>
+            </div>
+          </form>
+        </div>
+      </eda-box-container>
+    </div>
+    <div [class]="gridsOnSide"></div>
+  </div>
+</div>

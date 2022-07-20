@@ -1,3 +1,4 @@
+@import '../layout.constants.scss';
 .header {
   justify-content: space-between;
   align-items: center;
@@ -12,5 +13,47 @@
   width: 100%;
   &-left {
     padding-left: 10px;
+  }
+  &-right {
+    margin-right: 10px;
+  }
+  &-user-menu {
+    & button {
+      font-family: 'titlecommerce';
+      background: transparent;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      border: 10px;
+      & span {
+        float: left;
+        font-weight: bolder;
+        padding: 10px 0 10px 0;
+        margin-right: 10px;
+      }
+      &:hover {
+        background: var(--header-user-menu-hover-button);
+        border-radius: 10px;
+        border: none;
+      }
+    }
+  }
+}
+@media (min-width: $SM_RESOLUTION) {
+  .header-user-menu {
+    &-a {
+      width: 180px !important;
+      &-icon {
+        float: left;
+        margin-top: 6px;
+      }
+    }
+    &-icon {
+      float: right;
+      margin-top: 7px;
+    }
+    & span {
+      font-family: 'Poppins', sans-serif;
+    }
   }
 }

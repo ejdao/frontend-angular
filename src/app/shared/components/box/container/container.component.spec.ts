@@ -3,18 +3,18 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { EdaIconModule } from 'src/app/shared/components/icon/icon.module';
-import { HeaderComponent } from './header.component';
+import { EdaBoxContainerComponent } from './container.component';
 
-describe('HeaderComponent', () => {
+describe('EdaBoxContainerComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HeaderComponent],
+      declarations: [EdaBoxContainerComponent],
       imports: [EdaIconModule, MatDialogModule, MatSnackBarModule, MatMenuModule],
     }).compileComponents();
   });
 
-  it('should create the header', () => {
-    const fixture = TestBed.createComponent(HeaderComponent);
+  it('should create the eda-box-container component', () => {
+    const fixture = TestBed.createComponent(EdaBoxContainerComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });

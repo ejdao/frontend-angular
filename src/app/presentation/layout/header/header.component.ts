@@ -1,4 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ModalService } from 'src/app/services/modal/modal.service';
+import { ToastService } from 'src/app/services/toast/toast.service';
 import { SidebarService } from '../sidebar/sidebar.service';
 
 @Component({
@@ -8,9 +10,23 @@ import { SidebarService } from '../sidebar/sidebar.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
-  constructor(private _sidebarService: SidebarService) {}
+  public userName: string = 'HENRY OF WEAPONS';
+
+  constructor(
+    private _sidebarService: SidebarService,
+    private _modal: ModalService,
+    private _toast: ToastService
+  ) {}
 
   public toggleSidebar(): void {
     this._sidebarService.toggle();
+  }
+
+  public onLogout(): void {
+    this._modal.confirm('do you really want to log out?', 'sure?').subscribe(value => {
+      if (value) {
+        this._toast.notification('session ended');
+      }
+    });
   }
 }

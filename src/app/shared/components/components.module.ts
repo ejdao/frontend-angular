@@ -7,6 +7,8 @@ import { EdaDividerModule } from './divider/divider.module';
 import { EdaTooltipModule } from './tooltip/tooltip.module';
 import { EdaButtonModule } from './button/button.module';
 import { EdaIconModule } from './icon/icon.module';
+import { EdaBoxModule } from './box/box.module';
+import { EdaCardModule } from './card/card.module';
 
 @NgModule({
   declarations: [],
@@ -19,6 +21,8 @@ import { EdaIconModule } from './icon/icon.module';
     EdaTooltipModule,
     EdaButtonModule,
     EdaIconModule,
+    EdaCardModule,
+    EdaBoxModule,
   ],
   exports: [
     EdaSlideToggleModule,
@@ -27,6 +31,8 @@ import { EdaIconModule } from './icon/icon.module';
     EdaTooltipModule,
     EdaButtonModule,
     EdaIconModule,
+    EdaCardModule,
+    EdaBoxModule,
   ],
 })
 export class EdaComponentsModule {}

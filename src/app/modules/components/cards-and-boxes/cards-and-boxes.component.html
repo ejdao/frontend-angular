@@ -1,0 +1,29 @@
+<div style="max-width: 300px"></div>
+<div class="row">
+  <div class="col-12 col-md-6 col-lg-3">
+    <eda-card> example card WITH topline </eda-card>
+  </div>
+  <div class="col-12 col-md-6 col-lg-3">
+    <eda-card topLineColor="red">
+      example card WITH personalized topline (by direct style)
+    </eda-card>
+  </div>
+  <div class="col-12 col-md-6 col-lg-3">
+    <eda-card topLineClass="bg-blue"> example card WITH personalized topline (by class) </eda-card>
+  </div>
+  <div class="col-12 col-md-6 col-lg-3">
+    <eda-card [hasTopLine]="false"> example card WITHOUT topline </eda-card>
+  </div>
+</div>
+<eda-box [grids]="[12, 8, 8, 4]">
+  Responsive Box ajust on center defined by bootstrap grids
+</eda-box>
+<eda-box-container style="padding: 10px">Free box for configuration</eda-box-container>
+<eda-box-form
+  name="eda-box-form"
+  description="simple form with box"
+  [formGroup]="myForm"
+  [loading]="loading"
+  (ngSubmit)="onSubmit()">
+  <eda-text-field label="testing" placeholder="write here" formControlName="text"></eda-text-field>
+</eda-box-form>
